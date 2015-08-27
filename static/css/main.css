@@ -49,3 +49,6 @@ h3{orphans:3;widows:3;}
 h2,
 h3{page-break-after:avoid;}
 }
+#searchform{float: center; margin-top: 10px;}
+#searchbox{background-color:#F5F4EF;border:1px solid #F5F4EF;border-radius:4px 4px 4px 4px;-moz-border-radius:4px 4px 4px 4px;-webkit-border-radius:4px 4px 4px 4px;height:20px;padding:4px;margin:0px 15px;vertical-align:top;
+}
