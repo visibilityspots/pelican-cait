@@ -40,10 +40,11 @@
         {% endif %}
         {% block stylesheets %}
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
-        <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css">
         {% endblock stylesheets %}
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
@@ -64,6 +65,7 @@
         </div>
 
         {% include "ga.html" %}
+        {% include "owa.html" %}
         <script src="{{ SITEURL }}/theme/js/main.js"></script>
     </body>
 </html>
