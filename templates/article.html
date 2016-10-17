@@ -22,7 +22,9 @@
                         </time>
                         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"><h1>{{ article.title }}</h1></a>
                     </header>
-
+		    {% if article.readtime %}
+                      <div><b>Read in {{article.readtime.minutes}} min.</b></div>
+                    {% endif %}
                     <section class="post-content">
                         {{ article.content }}
                     </section>

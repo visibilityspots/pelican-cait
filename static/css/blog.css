@@ -1,11 +1,11 @@
 body{color:#272822;background-color:#eeeeee;font-family:"Lato", sans-serif;}
 #sidebar{background:url("../img/stressed_linen/stressed_linen.png") repeat;position:fixed;left:0;bottom:0;right:auto;top:0;width:25%;min-width:200px;padding-left:8px;padding-right:8px;color:#eeeeee;}
 #sidebar a{color:#eeeeee;text-decoration:none;}
-#site-title{font-family:"Oswald", sans-serif;font-size:2em;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
+#site-title{font-family:"Oswald", sans-serif;font-size:1em;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
 #site-title:hover{color:#38c5c5;}
 #site-desc{font-size:1.3em;padding:0 6px;}
 #post-container{position:relative;margin-left:27%;max-width:800px;overflow-wrap:break-word;}
-#nav-links{list-style:none;padding:0;font-family:"Oswald", sans-serif;font-size:2em;font-variant:bold;}
+#nav-links{list-style:none;padding:0;font-family:"Oswald", sans-serif;font-size:1.5em;font-variant:bold;}
 #nav-links li{margin:12px 12px;}
 #nav-links a{padding:0 24px;border-radius:24px;display:inline-block;border:3px solid #eeeeee;line-height:1.8em;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
 #nav-links a:hover{border-color:#38c5c5;color:#38c5c5;}
