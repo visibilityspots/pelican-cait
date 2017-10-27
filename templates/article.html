@@ -17,9 +17,6 @@
             <li>
                 <article class="post-entry">
                     <header class="entry-header">
-                        <time class="post-time" datetime="{{ article.date.isoformat() }}" pubdate>
-                            {{ article.locale_date }}
-                        </time>
                         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"><h1>{{ article.title }}</h1></a>
 	    	    	{% if article.readtime_string %}<div><p>takes {{article.readtime_string}} to read</p></div>{% endif %}
                         <time class="post-time" datetime="{{ article.date.isoformat() }}" pubdate>
