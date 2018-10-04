@@ -2,7 +2,14 @@
 
 {% block content %}
 <div id="content-box">
+<div id="contact-form">
+The requested item could not be located.
+<form id="searchform" action="{{ SITEURL }}/search.html" onsubmit="return (this.elements['q'].value.length > 0)">
+    <input id="searchbox" type="text" name="q" size="12" placeholder="search">
+</form>
+<hr/>
 <iframe src="https://notfound-static.fwebservices.be/nl-BE/404?key=5bb6736717e8f" width="100%" height="650" frameborder="0"></iframe>
-{% include "footer.html" %}
 </div>
+</div>
+{% include "footer.html" %}
 {% endblock content %}
