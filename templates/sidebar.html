@@ -3,9 +3,9 @@
     <a id="site-title" href="{{ SITEURL }}"><h1>{{ SITENAME }} <i class={% if ICON %}"{{ ICON }}"{% else %}"icon-coffee"{% endif %}></i></h1></a>
         <p id="site-desc">{% if SITESUBTITLE %} {{ SITESUBTITLE }} {% endif %}</p>
     </hgroup>
-    <form id="searchform" action="{{ SITEURL }}/search.html" onsubmit="return (this.elements['q'].value.length > 0)">
-	        <input id="searchbox" type="text" name="q" size="12" placeholder="search">
-    </form>
+    <input data-stork="sitesearch" id="searchbox" type="text" size="12" placeholder="search">
+    <div data-stork="sitesearch-output"></div>
+
     <nav>
         <ul id="nav-links">
             {% if USE_CUSTOM_MENU %}
@@ -23,7 +23,7 @@
     Categories:
       <ul>
         {% for category, articles in categories %}
-	<li><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a></li>
+        <li><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a></li>
         {% endfor %}
       </ul>
     {% endif %}

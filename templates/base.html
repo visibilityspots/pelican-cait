@@ -44,7 +44,7 @@
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
-	<link rel="stylesheet" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css">
+        <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="https://files.stork-search.net/dark.css">
         {% endblock stylesheets %}
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
@@ -68,5 +68,9 @@
         {% include "owa.html" %}
         {% include "piwik.html" %}
         <script src="{{ SITEURL }}/theme/js/main.js"></script>
+        <script src="https://files.stork-search.net/releases/v1.2.1/stork.js"></script>
+        <script>
+            stork.register("sitesearch", "{{ SITEURL }}/search-index.st")
+            </script>
     </body>
 </html>
